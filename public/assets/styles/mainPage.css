@@ -9,7 +9,7 @@ body {
   font-family: Arial Black, sans-serif;
   text-align: center;
   background: #000;
-  height: 200vh;
+  height: 2000vh;
 }
 
 .TextContainer {
@@ -17,6 +17,11 @@ body {
   left: 0;
   top: 0.5vw;
   width: 100%;
+  font-weight: 900;
   letter-spacing: .25em;
   text-align: center;
+  color: #161616;
+  font-stretch: expanded;
+  text-transform: uppercase;
+  -webkit-text-stroke: #2d2d2d 1px;
 }
