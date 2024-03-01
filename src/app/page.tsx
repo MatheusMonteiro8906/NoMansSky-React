@@ -1,7 +1,6 @@
 "use client";
 import Plx from "react-plx";
-import "../../public/assets/styles/main.css";
-import "../../public/assets/images/background.jpg";
+import "../../public/assets/styles/mainPage.css";
 import Image from "next/image";
 import { useEffect } from "react";
 
@@ -9,7 +8,6 @@ export default function Home() {
 
   const scrollHome = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    console.log("teswe");
   }
 
 
@@ -34,8 +32,8 @@ export default function Home() {
           ],
         },
         {
-          start: 230,
-          duration: 300,
+          start: 200,
+          duration: 100,
           properties: [
             {
               startValue: 1,
@@ -52,9 +50,13 @@ export default function Home() {
           width: "100%",
         }}
       >
+        <div className="TextContainer">
+          <h1> <b>NO MAN'S SKY</b></h1>
+          <h2>A JOURNEY THROUGH INFINITY</h2>
+        </div>
         <Image
           style={{ width: "100%" }}
-          src="/assets/images/no-mans-sky-original-logo_1920.0.jpg"
+          src="/assets/images/anomaly.jpg"
           alt="background"
           width={1600}
           height={900}
@@ -67,19 +69,9 @@ export default function Home() {
             end: 200,
             properties: [
               {
-                startValue: -2,
-                endValue: 816,
-                property: "translateX",
-              },
-              {
-                startValue: -34,
-                endValue: -242,
-                property: "translateY",
-              },
-              {
-                startValue: 5.6,
+                startValue: -3,
                 endValue: 1,
-                property: "scale",
+                property: "opacity",
               },
             ],
           },
@@ -87,20 +79,54 @@ export default function Home() {
         style={{
           position: "fixed",
           left: 0,
-          top: "15vw",
+          top: "1vh",
+          width: "100%",
+          transform: " translateX(45.5%)"
+        }}
+      >
+        <Image
+          src="/assets/images/atlasIcon.png"
+          alt="background"
+          width={72}
+          height={86}
+          onClick={() => { scrollHome() }}
+
+          style={{ cursor: "pointer", position: "fixed" }}
+        />
+      </Plx>
+
+      <Plx
+        parallaxData={[
+          {
+            start: 300,
+            end: 200,
+            properties: [
+              {
+                startValue: -0,
+                endValue: 1,
+                property: "opacity",
+              },
+            ],
+          },
+        ]}
+        style={{
+          position: "fixed",
+          left: 0,
+          top: 0,
           width: "100%",
         }}
       >
         <Image
-          src="/assets/images/atlas.webp"
+          src="/assets/images/No-Mans-Sky-4K-Wallpaper.jpg"
           alt="background"
-          width={160}
-          height={82}
+          width={1600}
+          height={900}
           onClick={() => { scrollHome() }}
-
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer", position: "fixed" }}
         />
       </Plx>
-    </div>
+
+
+    </div >
   );
 }
