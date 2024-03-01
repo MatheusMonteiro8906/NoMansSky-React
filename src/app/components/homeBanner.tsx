@@ -2,16 +2,9 @@
 import Plx from "react-plx";
 import "../../../public/assets/styles/mainPage.css";
 import Image from "next/image";
-import { useEffect } from "react";
 
 export default function HomeBanner() {
 
-  const scrollHome = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-
-  useEffect(() => { scrollHome() })
   return (
     <div>
 
@@ -30,11 +23,17 @@ export default function HomeBanner() {
               endValue: 2,
               property: "brightness",
             },
+            {
+              unit: "%",
+              startValue: 0,
+              endValue: -50,
+              property: "translateY"
+            },
           ],
         },
         {
           start: 320,
-          duration: 100,
+          duration: 55,
           properties: [
             {
               startValue: 1,
@@ -44,23 +43,20 @@ export default function HomeBanner() {
           ],
         },
         ]}
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: "100%",
-        }}
+        className="parallaxDefaultStyle"
       >
         <div className="TextContainer">
           <h1> <b>NO MAN'S SKY</b></h1>
           <h2>A JOURNEY THROUGH INFINITY</h2>
         </div>
         <Image
-          style={{ width: "100%" }}
+          className="mainPageImage"
           src="/assets/images/nmsBackground.png"
           alt="background"
-          width={1600}
-          height={600}
+          width={1920}
+          height={1080}
+          quality={100}
+          priority={true}
         />
       </Plx>
 

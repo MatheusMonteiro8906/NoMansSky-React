@@ -2,26 +2,20 @@
 import Plx from "react-plx";
 import "../../../public/assets/styles/mainPage.css";
 import Image from "next/image";
-import { useEffect } from "react";
 
 export default function AnomalyPage() {
 
-  const scrollHome = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-
-  useEffect(() => { scrollHome() })
   return (
     <div>
 
       <Plx
+        className="parallaxDefaultStyle"
         parallaxData={[{
-          start: 340,
+          start: 320,
           end: 800,
           properties: [
             {
-              startValue: 4,
+              startValue: 5,
               endValue: 1,
               property: "scale",
             },
@@ -32,32 +26,15 @@ export default function AnomalyPage() {
             },
           ],
         },
-        {
-          start: 750,
-          duration: 100,
-          properties: [
-            {
-              startValue: 0,
-              endValue: 1,
-              property: "opacity",
-            },
-          ],
-        },
         ]}
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: "100%",
-          opacity: "0"
-        }}
       >
         <Image
-          style={{ width: "100%" }}
+          className="mainPageImage"
           src="/assets/images/anomaly.jpg"
           alt="background"
-          width={1600}
-          height={600}
+          width={1920}
+          height={1080}
+          quality={100}
         />
       </Plx>
 
