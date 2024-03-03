@@ -9,6 +9,7 @@ export default function HomeBanner() {
     <div>
 
       <Plx
+        className="parallaxDefaultStyle"
         parallaxData={[{
           start: 0,
           end: 400,
@@ -43,7 +44,6 @@ export default function HomeBanner() {
           ],
         },
         ]}
-        className="parallaxDefaultStyle"
       >
         <div className="TextContainer">
           <h1> <b>NO MAN'S SKY</b></h1>
@@ -53,8 +53,7 @@ export default function HomeBanner() {
           className="mainPageImage"
           src="/assets/images/nmsBackground.png"
           alt="background"
-          width={1920}
-          height={1080}
+          fill={true}
           quality={100}
           priority={true}
         />

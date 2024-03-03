@@ -20,7 +20,7 @@ export default function SideIcon() {
             end: 200,
             properties: [
               {
-                startValue: 1.2,
+                startValue: 1.1,
                 endValue: 0.2,
                 property: "scale",
               },
@@ -33,7 +33,7 @@ export default function SideIcon() {
               {
                 unit: "%",
                 startValue: 0,
-                endValue: -70,
+                endValue: -62,
                 property: "translateY"
               },
             ],
@@ -44,7 +44,7 @@ export default function SideIcon() {
           src="/assets/images/nmsPrisma.png"
           alt="helperIcon"
           width={216}
-          height={300}
+          height={320}
           onClick={() => { scrollHome() }}
 
           style={{ cursor: "pointer" }}

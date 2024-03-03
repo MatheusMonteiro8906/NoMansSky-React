@@ -9,18 +9,12 @@ import SideIcon from "./components/sideIcon";
 
 export default function Home() {
 
-  const scrollHome = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-
-  useEffect(() => { scrollHome() })
   return (
     <div>
 
-      <SideIcon />
       <AnomalyPage />
       <HomeBanner />
+      <SideIcon />
 
     </div >
   );

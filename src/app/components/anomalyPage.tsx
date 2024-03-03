@@ -28,6 +28,10 @@ export default function AnomalyPage() {
         },
         ]}
       >
+        <div className="TextContainer">
+          <h1> <b>NO MAN'S SKY</b></h1>
+          <h2>A JOURNEY THROUGH INFINITY</h2>
+        </div>
         <Image
           className="mainPageImage"
           src="/assets/images/anomaly.jpg"
