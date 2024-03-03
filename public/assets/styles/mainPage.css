@@ -18,14 +18,14 @@ body {
   top: 0.5vw;
   width: 100%;
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 1.8em;
   letter-spacing: .25em;
   text-align: center;
   color: #161616;
   font-stretch: expanded;
   text-transform: uppercase;
   -webkit-text-stroke: #2d2d2d 1px;
-  z-index: 232;
+  z-index: 2;
 }
 
 .mainPageImage {

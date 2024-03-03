@@ -20,7 +20,7 @@ export default function SideIcon() {
             end: 200,
             properties: [
               {
-                startValue: 1.1,
+                startValue: 1,
                 endValue: 0.2,
                 property: "scale",
               },
