@@ -46,7 +46,7 @@ export default function SideIcon() {
           width={216}
           height={320}
           onClick={() => { scrollHome() }}
-
+          priority={true}
           style={{ cursor: "pointer" }}
         />
       </Plx>

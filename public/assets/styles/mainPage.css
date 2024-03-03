@@ -13,19 +13,18 @@ body {
 }
 
 .TextContainer {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0.5vw;
   width: 100%;
-  font-weight: 900;
-  font-size: 1.8em;
+  font-weight: 800;
+  font-size: 1.4em;
   letter-spacing: .25em;
   text-align: center;
-  color: #161616;
+  color: #dfdfdf;
   font-stretch: expanded;
   text-transform: uppercase;
-  -webkit-text-stroke: #2d2d2d 1px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .mainPageImage {
@@ -44,6 +43,6 @@ body {
 
 .sideIcon {
   position: fixed;
-  top: 15vh;
+  top: 19vh;
   width: 100%;
 }
