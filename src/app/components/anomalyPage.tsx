@@ -12,32 +12,43 @@ export default function AnomalyPage() {
         className="parallaxDefaultStyle"
         parallaxData={[{
           start: 320,
-          end: 800,
+          end: 1200,
           properties: [
             {
-              startValue: 5,
+              startValue: 20,
               endValue: 1,
               property: "scale",
             },
             {
-              startValue: 3,
+              startValue: 8,
               endValue: 1,
               property: "brightness",
+            },
+            {
+              unit: "%",
+              startValue: 328,
+              endValue: 0,
+              property: "translateY",
+            },
+            {
+              unit: "%",
+              startValue: -58,
+              endValue: 0,
+              property: "translateX",
             },
           ],
         },
         ]}
       >
         <div className="TextContainer">
-          <h1> <b>NO MAN'S SKY</b></h1>
-          <h2>A JOURNEY THROUGH INFINITY</h2>
+          <h1> <b>But even infinity</b></h1>
+          <h2>Has its boundaries</h2>
         </div>
         <Image
           className="mainPageImage"
-          src="/assets/images/anomaly.jpg"
+          src="/assets/images/atlasInsideInterface.png"
           alt="background"
-          width={1920}
-          height={1080}
+          fill={true}
           quality={100}
         />
       </Plx>
